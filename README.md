@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://i.imgur.com/X34NlKX.png">
+ <img src="https://i.imgur.com/yRlIVA6.png">
 </p>
 
 ## Qu'est-ce qu'InkEat
