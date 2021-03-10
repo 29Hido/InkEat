@@ -12,11 +12,11 @@ body {
 }
 
 nav {
-    height: 60px;
+    height: 70px;
     background: #0085FF;
     position: relative;
     padding: 0 150px;
-    line-height: 60px;
+    line-height: 70px;
 }
 
 @media screen and (max-width: 900px) {
@@ -26,7 +26,7 @@ nav {
 }
 
 nav a img {
-    margin-top: 13px;
+    margin-top: 17px;
 }
 
 nav ul {
