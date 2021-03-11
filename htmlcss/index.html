@@ -14,6 +14,7 @@
                 <a href="pages/carte.html"><li>Carte</li></a>
                 <a href="pages/reserver.html"><li>Réserver</li></a>
                 <a href="#contact"><li>Contact</li></a>
+                <a href="pages/reserver.html"><li>Espace client</li></a>
             </ul>
             <a class="open-nav-responsive">-</a>
         </nav>
@@ -33,9 +34,9 @@
             <div class="about-us">
                 <div class="about-us-text">
                     <h2>A propos</h2>
-                    <p>Chez InkEat, venez vous assoir aux tables du restaurant le plus futuriste jamais vu ! 
-                    Nous proposons un menu unique au monde, retrouvez des plats imprimés en 3D, composez vos propres macros-nutriments ou goutez à la nourriture lyophilisée. 
-                    Notre carte est en total respect de l'environnement, nos ingrédients sont faits à base d'agriculture écologique. 
+                    <p>Chez InkEat, venez vous assoir aux tables du restaurant le plus futuriste jamais vu !</p>
+                    <p>Nous proposons un menu unique au monde, retrouvez des plats imprimés en 3D, composez vos propres taux de macros-nutriments ou goutez à la nourriture lyophilisée.</p>
+                    <p>Notre carte est en total respect de l'environnement, nos ingrédients sont faits à base d'agriculture écologique.
                     Goutez au futur dès maintenant depuis chez vous avec notre livraison par drone, et un nouveau mode de payement rejoint nos services : le Bitcoin pour plus de sécurité et de praticité.</p>
                 </div>
                 <div class="about-us-image">
@@ -47,26 +48,25 @@
     
     <section id="inovations">
         <div class="inovations">
-            <div>
-                <div>
-                    <i></i>
-                    <p>Ecologique</p>
-                    <p>Lorem ipsum is sim ply dummy text</p>
-                </div>
+            <div class="inov-card">
+                <div class="inov-card-icon"><img src="images/icons/leaf.svg"></div>
+                <span class="inov-card-title">Ecologique</span>
+                <p class="inov-card-text">Nos repas sont préparés en suivant un mode d'agriculture durable et écologique. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div>
-                <div>
-                    <i></i>
-                    <p>Livraison</p>
-                    <p>Lorem ipsum is sim ply dummy text</p>
-                </div>
+            <div class="inov-card">
+                <div class="inov-card-icon"><img src="images/icons/leaf.svg"></div>
+                <span class="inov-card-title">Ecologique</span>
+                <p class="inov-card-text">Nos repas sont préparés en suivant un mode d'agriculture durable et écologique. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div>
-                <div>
-                    <i></i>
-                    <p>Payement</p>
-                    <p>Lorem ipsum is sim ply dummy text</p>
-                </div>
+            <div class="inov-card">
+                <div class="inov-card-icon"><img src="images/icons/fly.svg"></div>
+                <span class="inov-card-title">Livraison</span>
+                <p class="inov-card-text">Nous vous offrons la possibiliter d'être livré par drone. Cet usage des drones nous permet de couvrir tous les secteurs en plus d'éviter les conctatcs physiques.</p>
+            </div>
+            <div class="inov-card">
+                <div class="inov-card-icon"><img src="images/icons/btc.svg"></div>
+                <span class="inov-card-title">Paiement</span>
+                <p class="inov-card-text">Le Bitcoin a l'avantage de permettre les paiements entre personnes sans qu'un tiers de confiance ne soit nécessaire pour garantir la transaction.</p>
             </div>
         </div>
     </section>
@@ -75,15 +75,15 @@
         <h2>Horaires</h2>
         <div class="horaires">
             <div>
-                <p>8H00-22H00</p>
+                <h3>8H00-22H00</h3>
                 <p>LUN-VEN</p>
             </div>
             <div>
-                <p>9H00-23H00</p>
+                <h3>9H00-23H00</h3>
                 <p>SAMEDI</p>
             </div>
             <div>
-                <p>9H00-00H00</p>
+                <h3>9H00-00H00</h3>
                 <p>DIMANCHE</p>
             </div>
         </div>
@@ -121,27 +121,39 @@
     
     <section id="contact">
         <h2>Contact</h2>
-        <div class="contactez">
-            <form class="form">
-                <div>
-                    <input type="text" name="nom" placeholder="Nom">
-                    <input type="text" name="prenom" placeholder="Prénom">
-                </div>
-                <div>
-                    <input type="text" name="email" placeholder="E-mail">
-                    <input type="text" name="phone" placeholder="Téléphone">
-                </div>
-                <div>
-                    <textarea name="message" cols="30" rows="10" placeholder="Votre message"></textarea>
-                </div>
-                <div>
-                    <input type="text" name="verif" placeholder="Que font 7+2">
-                    <label><input type="checkbox" name="conditions">J'accepte que mon adresse e-mail et mon numéro soit stockés pour apporter une réponse</label>
-                </div>
-                <div>
-                    <input type="submit" value="ENVOYER">
-                </div>
-            </form>
+        <div class="contact">
+            <div class="contact-form">
+                <p>Nous envoyer un message :</p>
+                <form class="form">
+                    <div>
+                        <input type="text" name="nom" placeholder="Nom">
+                    </div>
+                    <div>
+                        <input type="text" name="prenom" placeholder="Prénom">
+                    </div>
+                    <div>
+                        <input type="text" name="email" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <input type="text" name="phone" placeholder="Téléphone">
+                    </div>
+                    <div class="form-textarea">
+                        <textarea name="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    </div>
+                    <div>
+                        <input type="text" name="verif" placeholder="Que font 7+2">
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="conditions"> J'accepte que mon adresse e-mail et mon numéro soit stockés pour apporter une réponse</label>
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" value="ENVOYER">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.9061144938155!2d3.0594039159009365!3d50.62886088237407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5854fb029d7%3A0x8dd4f230d47e12c8!2s45%20Rue%20Nicolas%20Leblanc%2C%2059000%20Lille!5e0!3m2!1sfr!2sfr!4v1615503321757!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </section>
     
@@ -173,7 +185,7 @@
                     macronutriments pensés par
                     nos spécialistes
                 </p>
-                <p>© InkEat 2021 | 45 Rue Nicolas Leblanc</p>
+                <p>© InkEat 2021 - Tous droits réservés</p>
             </div>
             
         </div>

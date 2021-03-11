@@ -65,7 +65,7 @@ header {
 .header-main {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 70px 20px;
 }
 
@@ -102,10 +102,11 @@ header {
     font-size: 1.5em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1180px) {
     .header-main {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        height: 350px;
     }
 
     nav ul {
@@ -122,15 +123,27 @@ header {
     
     .header-main-text {
         text-align: center;
-        top: 5%;
+        top: 10%;
     }
 }
 
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 section h2 {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 2.3em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+#about-us {
+    margin-top: 0px;
 }
 
 section .about-us {
@@ -140,7 +153,8 @@ section .about-us {
 
 section .about-us .about-us-text {
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 120px;
+    background-color: #ebebeb;
 }
 
 section .about-us .about-us-image {
@@ -156,29 +170,89 @@ section .about-us .about-us-image img {
 
 section .inovations {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    padding: 0 100px;
+}
+
+section .inovations .inov-card {
+    padding: 20px 25px;
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    background-color: #23374D;
+    border-radius: 12px;
+    color: white;
+    
+}
+
+section .inovations .inov-card .inov-card-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+section .inovations .inov-card .inov-card-icon img {
+    max-height: 35px;
+    max-width: 35px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+section .inovations .inov-card .inov-card-title {
+    position: relative;
+    left: 100px;
+    bottom: 55px;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+section .inovations .inov-card .inov-card-text {
+    text-align: center;
+    font-size: 1em;
 }
 
 section .horaires {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 0px 150px;
+}
+
+section .horaires h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+section .horaires p {
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 section .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 50px;
     padding: 0px 40px;
 }
 
-.gallery div {
+section .gallery div {
     display: block;
     margin: 0 auto;
     text-align: center;
 }
 
-.gallery div img {
+section .gallery div img {
     width: 100%;
     height: 100%;
     box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
@@ -186,6 +260,101 @@ section .gallery {
     -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
 }
 
+section .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 0 20px;
+}
+
+section .contact .contact-form .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 50px;
+}
+
+section .contact .contact-form .form input, textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+section .contact .contact-form .form input[type="checkbox"] {
+    width: auto;
+}
+
+section .contact .contact-form .form textarea {
+    resize: none;
+    overflow: auto;
+}
+
+section .contact .contact-form .form .form-textarea, .form-submit {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media screen and (max-width: 1350px) {
+    section .inovations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
+
+    section .inovations .inov-card {
+        margin-bottom: 15px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    section .inovations {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    section .inovations .inov-card {
+        margin-bottom: 15px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    section .about-us {
+        grid-template-columns: 1fr;
+    }
+    
+    section .about-us .about-us-text {
+        padding: 0 50px;
+    }
+
+    section .about-us .about-us-image {
+        display: none;
+    }
+
+    section .horaires {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    section .horaires p {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    section .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 50px;
+        padding: 0px 40px;
+    }
+}
 
 footer {
     background-color: #23374D;
@@ -221,23 +390,25 @@ footer ul li a {
     color: white; 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1280px) {
 
     footer .pied {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px 10px;
         text-align: center;
     }
 
     footer .footer-image {
         display: none;
     }
-    footer .footer-contact {
-        display: none;
-    }
-    footer .footer-plan {
-        display: none;
-    }
+    
     footer .pied div {
+        margin-bottom: 30px;
         padding: 0px 40px;
+    }
+
+    footer .pied .footer-info {
+        margin-bottom: 0px;
     }
 }
