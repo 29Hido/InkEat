@@ -99,6 +99,27 @@ section .inovations .inov-card .inov-card-text a {
     color: white;
 }
 
+@media screen and (max-width: 1350px) {
+    section .inovations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
+
+    section .inovations .inov-card {
+        padding: 20px;
+        height: 215px;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        background-color: #23374D;
+        border-radius: 12px;
+        color: white;
+        box-sizing: initial;
+    }
+
+}
+
 section .horaires {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -187,20 +208,6 @@ section .contact .contact-form .form .form-submit input:hover {
     -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
 }
 
-
-@media screen and (max-width: 1350px) {
-    section .inovations {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 0 20px;
-    }
-
-    section .inovations .inov-card {
-        margin-bottom: 15px;
-        width: 90%;
-    }
-}
-
 @media screen and (max-width: 1110px) {
 
     section .contact {
@@ -243,8 +250,12 @@ section .contact .contact-form .form .form-submit input:hover {
         padding: 0px 20px;
     }
 
+    section .horaires h3 {
+        margin-top: 30px;
+    }
+
     section .horaires p {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 }
 
@@ -253,7 +264,7 @@ section .contact .contact-form .form .form-submit input:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 50px;
-        padding: 0px 40px;
+        grid-gap: 20px;
+        padding: 0px 20px;
     }
 }

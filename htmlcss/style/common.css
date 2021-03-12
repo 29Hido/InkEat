@@ -56,6 +56,13 @@ nav ul a {
     font-weight: 800;
 }
 
+.open-nav-responsive img {
+    width: 30px;
+    height: 30px;
+    margin-top: 19px;
+    cursor: pointer;
+}
+
 nav ul a:hover {
     background-color: #23374D;
 }
