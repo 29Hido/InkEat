@@ -133,6 +133,7 @@ section .gallery div {
 section .gallery div img {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
     box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
     -webkit-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
     -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
