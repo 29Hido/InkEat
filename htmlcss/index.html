@@ -11,14 +11,15 @@
     <header>
         <nav>
             <a href="#"><img src="images/logo-small.png" alt="Logo"></a>
+            <input type="checkbox" id="expandNav">
+            <label for="expandNav" class="open-nav-responsive">-</label>
             <ul>
                 <a href="#"><li>Accueil</li></a>
                 <a href="pages/carte.html"><li>Carte</li></a>
                 <a href="pages/reserver.html"><li>Réserver</li></a>
                 <a href="#contact"><li>Contact</li></a>
-                <a href="pages/reserver.html"><li>Espace client</li></a>
+                <a href="pages/login.html"><li>Espace client</li></a>
             </ul>
-            <a class="open-nav-responsive">-</a>
         </nav>
         <div class="header-main">
             <div class="header-main-image">
@@ -128,20 +129,20 @@
                 <p>Nous envoyer un message :</p>
                 <form class="form" action="mailto:contact@inkeat.fr?subject='Contact'" method="POST" enctype="text/plain">
                     <div>
-                        <label for="nom">Nom* :</label>
-                        <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                        <label for="prenom">Prénom* :</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="ex: John" required>
                     </div>
                     <div>
-                        <label for="prenom">Prénom* :</label>
-                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+                        <label for="nom">Nom* :</label>
+                        <input type="text" name="nom" id="nom" placeholder="ex: Doe" required>
                     </div>
                     <div>
                         <label for="email">Email* :</label>
-                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input type="email" name="email" id="email" placeholder="ex: john.doe@contact.com" required>
                     </div>
                     <div>
                         <label for="phone">Téléphone* :</label>
-                        <input type="number" name="phone" id="phone" placeholder="Téléphone" required>
+                        <input type="number" name="phone" id="phone" placeholder="ex: 0362104444" required>
                     </div>
                     <div class="form-textarea">
                         <label for="message">Message* :</label>
