@@ -98,18 +98,15 @@ header {
     margin-bottom: 25px;
 }
 
-.header-main-text button {
+.header-main-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.7em;
     background: #23374D;
     border: none;
     padding: 10px;
     border-radius: 8px;
-}
-
-.header-main-text button a {
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.5em;
 }
 
 @media screen and (max-width: 1180px) {

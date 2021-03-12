@@ -26,7 +26,7 @@
             <div class="header-main-text">
                 <h1>InkEat</h1>
                 <p>3.. 2.. 1.. Goûtez au futur !</p>
-                <button><a href="#about-us">Découvrir</a></button>
+                <a href="#about-us">Découvrir</a>
             </div>
         </div>
     </header>
@@ -50,22 +50,22 @@
     <section id="inovations">
         <div class="inovations">
             <div class="inov-card">
-                <div class="inov-card-icon"><img src="images/icons/leaf.svg"></div>
+                <div class="inov-card-icon"><img src="images/icons/leaf.svg" alt="Feuille"></div>
                 <span class="inov-card-title">Ecologique</span>
                 <p class="inov-card-text">Notre offre gastronomique est à base de produits respectueux du bien-être des animaux et de l’agriculture durable.<br><a href="pages/eco.html">En savoir plus.</a></p>
             </div>
             <div class="inov-card">
-                <div class="inov-card-icon"><img src="images/icons/leaf.svg"></div>
+                <div class="inov-card-icon"><img src="images/icons/leaf.svg" alt="Feuille"></div>
                 <span class="inov-card-title">Lorem</span>
                 <p class="inov-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequuntur odit corrupti deleniti quo nisi maxime incidunt sequi nesciunt aliquam.</p>
             </div>
             <div class="inov-card">
-                <div class="inov-card-icon"><img src="images/icons/fly.svg"></div>
+                <div class="inov-card-icon"><img src="images/icons/fly.svg" alt="Parachute"></div>
                 <span class="inov-card-title">Livraison</span>
                 <p class="inov-card-text">Nous vous offrons la possibilité d'être livré par drone. Cet usage des drones nous permet de couvrir tous les secteurs en plus d'assurer de meilleurs délais de livraison.</p>
             </div>
             <div class="inov-card">
-                <div class="inov-card-icon"><img src="images/icons/btc.svg"></div>
+                <div class="inov-card-icon"><img src="images/icons/btc.svg" alt="Bitcoin"></div>
                 <span class="inov-card-title">Bitcoin</span>
                 <p class="inov-card-text">Le Bitcoin a l'avantage d'être une monnnaie hyper sécurisé. Il permet des paiements entre personnes sans qu'un tiers de confiance ne soit nécessaire pour garantir la transaction.</p>
             </div>
@@ -128,23 +128,23 @@
                 <form class="form" action="mailto:contact@inkeat.fr?subject='Contact'" method="POST" enctype="text/plain">
                     <div>
                         <label for="nom">Nom* :</label>
-                        <input type="text" name="nom" placeholder="Nom" required>
+                        <input type="text" name="nom" id="nom" placeholder="Nom" required>
                     </div>
                     <div>
-                        <label for="nom">Prénom* :</label>
-                        <input type="text" name="prenom" placeholder="Prénom" required>
+                        <label for="prenom">Prénom* :</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
                     </div>
                     <div>
-                        <label for="nom">Email* :</label>
-                        <input type="email" name="email" placeholder="E-mail" required>
+                        <label for="email">Email* :</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
                     </div>
                     <div>
-                        <label for="nom">Téléphone* :</label>
-                        <input type="number" name="phone" placeholder="Téléphone" required>
+                        <label for="phone">Téléphone* :</label>
+                        <input type="number" name="phone" id="phone" placeholder="Téléphone" required>
                     </div>
                     <div class="form-textarea">
-                        <label for="nom">Message* :</label>
-                        <textarea name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                        <label for="message">Message* :</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
                     </div>
                     <div>
                         <input type="text" name="verif" placeholder="Que font 7+2" required>
