@@ -122,7 +122,7 @@ header {
 
 .header-main-text {
     position: relative;
-    top: 10%;
+    top: 20%;
     color: white;
     font-family: monospace, sans-serif;
     font-weight: 700;
@@ -157,7 +157,7 @@ header {
     
     .header-main-text {
         text-align: center;
-        top: 10%;
+        top: 0%;
     }
 }
 
