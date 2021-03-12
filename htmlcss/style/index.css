@@ -175,6 +175,19 @@ section .contact .contact-form .form .form-textarea, .form-submit {
     grid-column-end: 3;
 }
 
+section .contact .contact-form .form .form-submit input {
+    cursor: pointer;
+    transition: .7s;
+}
+
+section .contact .contact-form .form .form-submit input:hover {
+    background: #f5f5f5;
+    box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+    -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+}
+
+
 @media screen and (max-width: 1350px) {
     section .inovations {
         display: grid;
