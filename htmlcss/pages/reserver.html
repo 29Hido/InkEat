@@ -35,35 +35,35 @@
             <section>
                 <h2>Reserver</h2>
                 <div class="container">
-                    <form action="" class="form">
+                    <form class="form" action="mailto:contact@inkeat.fr?subject='Reserver'" method="POST" enctype="text/plain">
                         <div class="row-one">
                             <div>
                                 <label for="prenom">Prénom* :</label>
-                                <input type="text" name="prenom" id="prenom" placeholder="ex: John">
+                                <input type="text" name="prenom" id="prenom" placeholder="ex: John" required>
                             </div>
                             <div>
                                 <label for="nom">Nom* :</label>
-                                <input type="text" name="nom" id="nom" placeholder="ex: Doe">
+                                <input type="text" name="nom" id="nom" placeholder="ex: Doe" required>
                             </div>
                             <div>
                                 <label for="email">Email* :</label>
-                                <input type="email" name="email" id="email" placeholder="ex: john.doe@contact.fr">
+                                <input type="email" name="email" id="email" placeholder="ex: john.doe@contact.fr" required>
                             </div>
                             <div>
                                 <label for="phone">Téléphone* :</label>
-                                <input type="number" name="phone" id="phone" placeholder="ex: 036210444">
+                                <input type="number" name="phone" id="phone" placeholder="ex: 036210444" required>
                             </div>
                             <div>
                                 <label for="adultes">Nombre d'adultes* :</label>
-                                <input type="number" min="0" name="adultes" id="adultes" placeholder="ex: 2">
+                                <input type="number" min="0" name="adultes" id="adultes" placeholder="ex: 2" required>
                             </div>
                             <div>
                                 <label for="enfants">Nombre d'enfants* :</label>
-                                <input type="number" min="0" name="enfants" id="enfants" placeholder="ex: 1">
+                                <input type="number" min="0" name="enfants" id="enfants" placeholder="ex: 1" required>
                             </div>
                             <div>
                                 <label for="surmesure">Plats sur mesures* :</label>
-                                <input type="number" min="0" name="surmesure" id="surmesure" placeholder="ex: 1">
+                                <input type="number" min="0" name="surmesure" id="surmesure" placeholder="ex: 1" required>
                             </div>
                             <div>
                                 <label for="nutri">Fichiers nutriments :</label>
@@ -71,11 +71,11 @@
                             </div>
                             <div>
                                 <label for="date">Date* :</label>
-                                <input type="date" name="date" id="date">
+                                <input type="date" name="date" id="date" required>
                             </div>
                             <div>
                                 <label for="hour">Heure* :</label>
-                                <input type="time" name="hour" id="hour" placeholder="ex: 19:00">
+                                <input type="time" name="hour" id="hour" placeholder="ex: 19:00" required>
                             </div>
                             <div>
                                 <input type="text" name="verif" placeholder="Que font 7+2" class="input-verif" required>
@@ -108,7 +108,6 @@
                 </div>
             </div>
         </section>
-        <hr/>
         <footer>
             <div class="pied">
                 <div class="footer-image">
