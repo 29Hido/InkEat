@@ -1,0 +1,41 @@
+main section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+    -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+}
+
+section h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.3em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+section .horaires {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 0px 150px;
+}
+
+section .horaires h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+section .horaires p {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+
+
+
+
