@@ -4,7 +4,7 @@
         <meta charset="URF-8">
         <title> Nom du restaurant </title>
         <link rel="stylesheet" href="../style/common.css" />
-        <link rel="stylesheet" href="../style/reserver.css" />
+        <link rel="stylesheet" href="style/reserver.css" />
     </head>
     <body>
         <header>
@@ -32,61 +32,73 @@
         </header>
         <hr/>
         <main>
-            <h2>Reserver</h2>
-                <form>
-                    <div>
-                        <div class="partie_1">
-                            <div class="left">
-                                <input type="text" name="nom" placeholder="Nom*" required>
+            <section>
+                <h2>Reserver</h2>
+                <div class="container">
+                    <form action="" class="form">
+                        <div class="row-one">
+                            <div>
+                                <label for="prenom">Prénom* :</label>
+                                <input type="text" name="prenom" id="prenom" placeholder="ex: John">
                             </div>
-                            <div class="right">
-                                <input type="text" name="prénom" placeholder="Prénom*" required>
+                            <div>
+                                <label for="nom">Nom* :</label>
+                                <input type="text" name="nom" id="nom" placeholder="ex: Doe">
                             </div>
-                            <div class="left">
-                                <input type="text" name="e-mail" placeholder="E-mail*" required>
+                            <div>
+                                <label for="email">Email* :</label>
+                                <input type="email" name="email" id="email" placeholder="ex: john.doe@contact.fr">
                             </div>
-                            <div class="right">
-                                <input type="text" name="téléphone" placeholder="Téléphone*" required>
+                            <div>
+                                <label for="phone">Téléphone* :</label>
+                                <input type="number" name="phone" id="phone" placeholder="ex: 036210444">
                             </div>
-                            <div class="left">
-                                <input type="text" name="nbrAdultes" placeholder="Nombre d'adultes*" required>
+                            <div>
+                                <label for="adultes">Nombre d'adultes* :</label>
+                                <input type="number" name="adultes" id="adultes" placeholder="ex: 2">
                             </div>
-                            <div class="right">
-                                <input type="text" name="nbrEnfants" placeholder="Nombre d'enfants*" required>
+                            <div>
+                                <label for="enfants">Nombre d'enfants* :</label>
+                                <input type="number" name="enfants" id="enfants" placeholder="ex: 1">
                             </div>
-                            <div class="left">
-                                <input type="text" name="platMesure" placeholder="Plats sur mesure*" required>
+                            <div>
+                                <label for="surmesure">Plats sur mesures* :</label>
+                                <input type="number" name="surmesure" id="surmesure" placeholder="ex: 1">
                             </div>
-                            <div class="right">
-                                <input type="text" name="importFichier" placeholder="Importer fichiers macros-nutriments*" required>
-                            </div>
-                        </div>
-                        
-                        <div class="partie_2">
-                            <div class="jour">
-                                <input type="text" name="jour" placeholder="Jour*" required>
-                            </div>
-                            <div class="mois">
-                                <input type="text" name="mois" placeholder="Mois*" required>
-                            </div>
-                            <div class="heure">
-                                <input type="text" name="heure" placeholder="Heure*" required>
+                            <div>
+                                <label for="nutri">Fichiers nutriments :</label>
+                                <input type="file" name="nutri" id="nutri">
                             </div>
                         </div>
-    
-                        <div class="partie_3">
-                            <div class="test">
-                                <input type="text" name="verif" placeholder="Que font 7+2" required> <label> <input type="checkbox" name="conditions" checked> J'accepte que mon adresse e-mail et mon numéro soient stockés pour apporter une réponse</label>
+                        <div class="row-two">
+                            <div>
+                                <label for="day">Jour* :</label>
+                                <input type="day" name="day" id="day" placeholder="ex: 29">
+                            </div>
+                            <div>
+                                <label for="month">Mois/Année* :</label>
+                                <input type="month" name="month" id="month" placeholder="ex: 04">
+                            </div>
+                            <div>
+                                <label for="hour">Heure* :</label>
+                                <input type="time" name="hour" id="hour" placeholder="ex: 19:00">
                             </div>
                         </div>
-    
-                        <div class="form-submit">
-                            <input type="submit" value="RESERVER">
+                        <div class="row-three">
+                            <div>
+                                <input type="text" name="verif" placeholder="Que font 7+2" class="input-verif" required>
+                            </div>
+                            <div>
+                                <label><input type="checkbox" name="conditions" checked> J'accepte que mon adresse e-mail et mon numéro soient stockés pour recevoir une réponse</label>
+                            </div>
+                            <div class="form-submit">
+                                <input type="submit" value="RESERVER">
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+            </section> 
         </main>
-        <hr/>
         <section>
             <h2>Horaires</h2>
             <div class="horaires">
