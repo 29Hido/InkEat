@@ -11,18 +11,10 @@ section h2 {
     padding: 0px 150px;
 }
 
-form .row-one, .row-three {
+form .row-one{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-}
-
-form .row-two {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin-bottom: 20px;
 }
 
 .form input, textarea {
@@ -60,6 +52,7 @@ form .row-two {
     cursor: pointer;
     transition: .7s;
     height: initial;
+    height: 100%;
 }
 
 .form .form-submit input:hover {
