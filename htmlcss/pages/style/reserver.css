@@ -69,14 +69,6 @@ form .row-two {
     -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
 }
 
-
-
-
-
-
-
-
-
  .horaires {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
