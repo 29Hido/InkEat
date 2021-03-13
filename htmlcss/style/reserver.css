@@ -1,0 +1,88 @@
+main  form div .partie_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+main form div .partie_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main form div .partie_3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+main form div input {
+    width: 60%;
+    border: solid 1px;
+    padding: 10px 20px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+main form  div .test {
+    width: 100%;
+}
+
+
+main  form div .test {
+    width: 500px;
+}
+
+main  form  div .left {
+    width: 100%;
+    padding-left: 370px;
+}
+
+main  form div .right {
+    width: 100%;
+}
+
+main  form div input[type="checkbox"] {
+    width: auto;
+}
+
+main form div .form-submit input {
+    cursor: pointer;
+    transition: .7s;
+    width: 29.7%;
+    display: block;
+    margin: 0 auto;
+    background-color: #333463;
+    color: #f5f5f5;
+}
+
+ h2, main h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.3em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+ .horaires {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 0px 150px;
+}
+
+ .horaires h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+ .horaires p {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
