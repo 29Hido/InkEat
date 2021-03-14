@@ -79,3 +79,24 @@ form .row-one{
     font-weight: 300;
     margin-bottom: 70px;
 }
+
+@media screen and (max-width: 1080px) {
+    section .horaires {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    section .horaires h3 {
+        margin-top: 30px;
+    }
+
+    section .horaires p {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        padding: 0px 10px;
+    }
+}

@@ -6,6 +6,7 @@ main section img {
     box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
     -webkit-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
     -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+    max-width: 100%;
 }
 
 section h2 {
@@ -34,6 +35,24 @@ section .horaires p {
     font-weight: 300;
     margin-bottom: 70px;
 }
+
+@media screen and (max-width: 1080px) {
+    section .horaires {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    section .horaires h3 {
+        margin-top: 30px;
+    }
+
+    section .horaires p {
+        margin-bottom: 30px;
+    }
+}
+
 
 
 
