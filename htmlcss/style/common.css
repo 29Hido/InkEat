@@ -123,17 +123,18 @@ header {
 
 .header-main-image img{
     float: right;
-    margin-right: 100px;
-    width: 70%;
+    margin-right: 20px;
+    width: 65%;
 }
 
 .header-main-text {
     position: relative;
     top: 20%;
     color: white;
+    margin-left: 50px;
     font-family: monospace, sans-serif;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.9em;
 }
 
 .header-main-text h1,p {
@@ -228,4 +229,24 @@ footer ul li a {
     footer .pied .footer-info {
         margin-bottom: 0px;
     }
+}
+
+.buttonhaut {
+    display: inline-block;
+    background-color: #0085FF;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    border:none;
+    font-size: 1.3em;
+    color:white;
+    cursor: pointer;
 }
