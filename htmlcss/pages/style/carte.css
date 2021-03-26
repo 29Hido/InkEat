@@ -58,6 +58,7 @@ section .conteneur {
     grid-template-columns: 1fr 1fr;
     padding: 0px 140px;
     padding-bottom: 50px;
+    grid-gap: 20px;
 }
 
 section .conteneur div a img {
