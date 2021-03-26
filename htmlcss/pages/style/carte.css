@@ -36,6 +36,18 @@ section .horaires p {
     margin-bottom: 70px;
 }
 
+section .conteneur {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 140px;
+    padding-bottom: 50px;
+    grid-gap: 20px;
+}
+
+section .conteneur div a img {
+    width: 80%;
+}
+
 @media screen and (max-width: 1080px) {
     section .horaires {
         display: grid;
@@ -51,17 +63,10 @@ section .horaires p {
     section .horaires p {
         margin-bottom: 30px;
     }
-}
 
-section .conteneur {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0px 140px;
-    padding-bottom: 50px;
-    grid-gap: 20px;
+    section .conteneur {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 }
-
-section .conteneur div a img {
-    width: 700px;
-}
-

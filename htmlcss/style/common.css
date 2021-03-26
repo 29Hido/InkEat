@@ -166,6 +166,7 @@ header {
     .header-main-text {
         text-align: center;
         top: 0%;
+        margin-left: 0px;
     }
 }
 
