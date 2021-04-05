@@ -1,0 +1,16 @@
+.conteneur {
+padding: 0px 150px;
+}
+
+.conteneur div p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.conteneur > div {
+    margin-top: 80px;
+}
+
+.last {
+    margin-bottom: 100px;
+}
