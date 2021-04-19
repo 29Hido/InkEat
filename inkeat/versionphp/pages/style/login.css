@@ -1,0 +1,79 @@
+.container {
+    padding: 40px 140px;
+}
+
+.choix-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        padding: 40px 25px;
+    }
+    .choix-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+}
+
+.choix-form h2 {
+    text-align: center;
+}
+
+.choix-form form {
+    margin-top: 25px;
+}
+
+.col-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px 20px;
+}
+
+form input, textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 60%;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    height: initial;
+}
+
+form .input-verif {
+    height: initial;
+}
+
+form textarea {
+    resize: none;
+    overflow: auto;
+}
+
+form .form-submit {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    cursor: pointer;
+    transition: .7s;
+}
+
+form .form-submit input {
+    cursor: pointer;
+    transition: .7s;
+    height: initial;
+    height: 100%;
+}
+
+form .form-submit input:hover {
+    background: #f5f5f5;
+    box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+    -moz-box-shadow: 10px 10px 27px -14px rgba(0,0,0,0.16);
+}
